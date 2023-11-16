@@ -1,0 +1,16 @@
+CREATE TABLE product (
+     id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     Categoria CHAR(45) NOT NULL,
+     Nombre CHAR(45) NOT NULL,
+     Precio INT NOT NULL,
+     Stock INT NOT NULL,
+     URL_Image CHAR(100) NOT NULL,
+     PRIMARY KEY (id)
+);
+
+INSERT INTO `televenta_db`.`product` (`Categoria`, `Nombre`, `Precio`, `Stock`, `URL_Image`) 
+VALUES ('Ofertas', 'Arroz Tucapel', '1200', '30', 'kjdfkjdhfgdgidgjkdfjglkdjgdlgkd');
+INSERT INTO `televenta_db`.`product` (`Categoria`, `Nombre`, `Precio`, `Stock`, `URL_Image`) 
+VALUES ('Ofertas', 'Aceite Miraflores', '1200', '30', 'kjdfkjdhfgdgidgjkdfjglkdjgdlgkd');
+INSERT INTO `televenta_db`.`product` (`Categoria`, `Nombre`, `Precio`, `Stock`, `URL_Image`) 
+VALUES ('Ofertas', 'Harina Molino', '2300', '10', 'kjdfkjdhfgdgidgjkdfjglkdjgdlgkd');
