@@ -44,17 +44,25 @@ $ npm install
 $ nest start
 ```
 
-## Test
+## DataBase Mysql
 
 ```bash
-# unit tests
-$ npm run test
+CREATE TABLE product (
+     id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     Categoria CHAR(45) NOT NULL,
+     Nombre CHAR(45) NOT NULL,
+     Precio INT NOT NULL,
+     Stock INT NOT NULL,
+     URL_Image CHAR(100) NOT NULL,
+     PRIMARY KEY (id)
+);
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+INSERT INTO `televenta_db`.`product` (`id`, `categoria`, `nombre`, `precio`, `stock`, `URL_Image`) 
+VALUES ('uyriouwyoiuyweoiuyoei', 'Ofertas', 'Arroz Tucapel', '1200', '30', 'kjdfkjdhfgdgidgjkdfjglkdjgdlgkd');
+INSERT INTO `televenta_db`.`product` (`id`, `categoria`, `nombre`, `precio`, `stock`, `URL_Image`) 
+VALUES ('2','Ofertas', 'Aceite Miraflores', '1200', '30', 'kjdfkjdhfgdgidgjkdfjglkdjgdlgkd');
+INSERT INTO `televenta_db`.`product` (`id`, `categoria`, `nombre`, `precio`, `stock`, `URL_Image`) 
+VALUES ('3','Ofertas', 'Harina Molino', '2300', '10', 'kjdfkjdhfgdgidgjkdfjglkdjgdlgkd');
 ```
 ## Stay in touch
 
