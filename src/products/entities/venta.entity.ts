@@ -1,23 +1,21 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
+
 @Entity()
-export class Product {
+export class Venta{
 
     @PrimaryGeneratedColumn('uuid')
-    id: string;
+    id_venta: string;
 
     @Column({nullable: false})
-    categoria: string
+    id_compra: string;
 
     @Column({nullable: false})
-    nombre: string
+    monto: number;
 
     @Column({nullable: false})
-    precio: number
+    email: string;
 
     @Column({nullable: false})
-    stock: number
-
-    @Column({nullable: false})
-    URL_Image: string
+    estado: string;
 }
